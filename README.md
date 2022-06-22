@@ -1,10 +1,10 @@
-test
-==============================
+# COVID-19 Dashboard
+---
 
-Hello, world!
+Overview dashboard of COVID-19 cases for the course Enterprise Data Science.
 
-Project Organization
-------------
+## Project Organization
+---
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
