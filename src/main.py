@@ -28,14 +28,14 @@ def main():
     data_de = data_de.reset_index(drop=True)
 
     data_se = data[data['location']=='Sweden']
-    data_se = data[data_se.reset_index(drop=True)]
+    data_se = data_se.reset_index(drop=True)
 
     data_uk = data[data['location']=='United Kingdom']
-    data_uk = data[data_uk.reset_index(drop=True)]
+    data_uk = data_uk.reset_index(drop=True)
 
     #Make Plot of Covid Cases (by pop.) over time of Germany, Sweden, UK
-    df = px.data_de
-    fig_cases = px.line(df,x="date",y="total_cases_per_million")
+    
+    fig_cases = px.line(data_de,x="date",y="total_cases_per_million")
     fig_cases.show()
 
     #Make Plot of Vaccinations (Fully Vaccinated by pop.) of Germany Sweden, UK
